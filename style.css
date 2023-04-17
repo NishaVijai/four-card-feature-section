@@ -5,14 +5,16 @@
 }
 
 body {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
   margin: 0;
   padding: 0;
   font-family: "Poppins Regular", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   min-height: 100vh;
-  overflow-y: auto;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,19 +32,11 @@ main {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  padding: 5rem 0;
+  padding: 5rem 2rem;
 }
 main h3 {
+  color: hsl(234, 12%, 34%);
   font-size: 1.2rem;
-}
-main img {
-  height: 20%;
-  max-width: 20%;
-}
-main p {
-  color: hsl(229, 6%, 66%);
-  font-family: "Poppins Extra Light", sans-serif;
-  font-weight: 200;
 }
 main .supervisor-section {
   border-top: 4px solid hsl(180, 62%, 55%);
@@ -56,18 +50,19 @@ main .karma-section {
 main .calculator-section {
   border-top: 4px solid hsl(212, 86%, 64%);
 }
-main .img-container {
-  display: flex;
-  justify-content: end;
-  margin-bottom: 0;
-}
 main .header-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 main .header-section h1 {
+  font-family: "Poppins Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
   margin-bottom: 0;
 }
 main .header-section h2 {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.6rem;
+  font-weight: 600;
   margin-top: 0;
 }
 main .header-section p {
@@ -77,25 +72,92 @@ main .header-section p {
 main section:not(.header-section) {
   border-radius: 3% 2%;
   box-shadow: 2px 5px 20px rgba(148, 175, 197, 0.5);
-  padding: 1.5rem;
-  max-width: 300px;
+  width: 100%;
+  padding: 2rem;
+  margin: auto;
+}
+main section:not(.header-section) .img-container {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 0;
 }
 main section:not(.header-section) h3 {
   margin-top: 0;
   margin-bottom: 0.2rem;
 }
 main section:not(.header-section) p {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 500;
   margin-top: 0;
+}
+main section:not(.header-section) img {
+  height: 20%;
+  max-width: 20%;
 }
 main section:not(.header-section) p:not(.img-container) {
   margin-bottom: 2rem;
+  max-width: 220px;
 }
 
 footer {
   display: none;
 }
 
+/* media query for desktop */
+@media only screen and (min-device-width: 768px) and (max-device-width: 6024px) {
+  main {
+    display: grid;
+    grid-template-areas: "header-section header-section header-section" "supervisor-section team-builder-section calculator-section" "supervisor-section karma-section calculator-section";
+    max-width: 1440px;
+  }
+  main .header-section {
+    grid-area: header-section;
+  }
+  main .supervisor-section {
+    grid-area: supervisor-section;
+  }
+  main .team-builder-section {
+    grid-area: team-builder-section;
+  }
+  main .karma-section {
+    grid-area: karma-section;
+  }
+  main .calculator-section {
+    grid-area: calculator-section;
+  }
+  main .header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .header-section h1 {
+    font-size: 1.9rem;
+  }
+  main .header-section h2 {
+    font-size: 1.9rem;
+    margin-bottom: 0;
+  }
+  main .header-section p {
+    max-width: 480px;
+  }
+  main section:not(.header-section) img {
+    height: 20%;
+    max-width: 20%;
+  }
+  main section:not(.header-section) p:not(.img-container) {
+    max-width: 250px;
+  }
+  footer {
+    display: block;
+    margin: 2rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  footer a {
+    color: hsl(228, 45%, 44%);
+  }
+}
 @font-face {
   font-family: "Poppins Extra Light";
   src: url("../assets/fonts/Poppins/Poppins-ExtraLight");
