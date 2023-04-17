@@ -1,4 +1,11 @@
-$red: red;
+$primary-red: hsl(0, 78%, 62%);
+$primary-cyan: hsl(180, 62%, 55%);
+$primary-orange: hsl(34, 97%, 64%);
+$primary-blue: hsl(212, 86%, 64%);
+
+$neutral-very-dark-blue: hsl(234, 12%, 34%);
+$neutral-grayish-blue: hsl(229, 6%, 66%);
+$neutral-very-light-gray: hsl(0, 0%, 98%);
 
 *,
 *::after,
@@ -9,35 +16,122 @@ $red: red;
 body {
     margin: 0;
     padding: 0;
-    font-family: "Poppins Extra Light", sans-serif;
-    font-size: 16px;
+    font-family: "Poppins Regular", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.5;
     min-height: 100vh;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
 }
 
 main {
     max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 5rem 0;
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    img {
+        height: 20%;
+        max-width: 20%;
+    }
+
+    p {
+        color: $neutral-grayish-blue;
+        font-family: "Poppins Extra Light", sans-serif;
+        font-weight: 200;
+    }
+
+    .supervisor-section {
+        border-top: 4px solid $primary-cyan;
+    }
+
+    .team-builder-section {
+        border-top: 4px solid $primary-red;
+    }
+
+    .karma-section {
+        border-top: 4px solid $primary-orange;
+    }
+
+    .calculator-section {
+        border-top: 4px solid $primary-blue;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 0;
+    }
+
+    .header-section {
+        margin-bottom: 1.5rem;
+
+        h1 {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            text-align: center;
+            max-width: 280px;
+        }
+    }
+
+    section:not(.header-section) {
+        border-radius: 3% 2%;
+        box-shadow: 2px 5px 20px rgba(148, 175, 197, 0.5);
+        padding: 1.5rem;
+        max-width: 300px;
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0.2rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+            margin-top: 0;
+        }
+
+        p:not(.img-container) {
+            margin-bottom: 2rem;
+        }
+    }
 }
 
-h1 {
-    
+footer {
+    display: none;
 }
 
 @font-face {
     font-family: "Poppins Extra Light";
     src: url("../assets/fonts/Poppins/Poppins-ExtraLight");
-    font-weight: 200;
 }
 
 @font-face {
     font-family: "Poppins Regular";
     src: url("../assets/fonts/Poppins/Poppins-Regular");
-    font-weight: 400;
 }
 
 @font-face {
     font-family: "Poppins Semibold";
     src: url("../assets/fonts/Poppins/Poppins-SemiBold");
-    font-weight: 600;
 }

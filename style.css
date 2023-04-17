@@ -7,29 +7,104 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins Extra Light", sans-serif;
-  font-size: 16px;
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 1.5;
   min-height: 100vh;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
 }
 
 main {
   max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 5rem 0;
+}
+main h3 {
+  font-size: 1.2rem;
+}
+main img {
+  height: 20%;
+  max-width: 20%;
+}
+main p {
+  color: hsl(229, 6%, 66%);
+  font-family: "Poppins Extra Light", sans-serif;
+  font-weight: 200;
+}
+main .supervisor-section {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+main .team-builder-section {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+main .karma-section {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+main .calculator-section {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+main .img-container {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 0;
+}
+main .header-section {
+  margin-bottom: 1.5rem;
+}
+main .header-section h1 {
+  margin-bottom: 0;
+}
+main .header-section h2 {
+  margin-top: 0;
+}
+main .header-section p {
+  text-align: center;
+  max-width: 280px;
+}
+main section:not(.header-section) {
+  border-radius: 3% 2%;
+  box-shadow: 2px 5px 20px rgba(148, 175, 197, 0.5);
+  padding: 1.5rem;
+  max-width: 300px;
+}
+main section:not(.header-section) h3 {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+main section:not(.header-section) p {
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+main section:not(.header-section) p:not(.img-container) {
+  margin-bottom: 2rem;
+}
+
+footer {
+  display: none;
 }
 
 @font-face {
   font-family: "Poppins Extra Light";
   src: url("../assets/fonts/Poppins/Poppins-ExtraLight");
-  font-weight: 200;
 }
 @font-face {
   font-family: "Poppins Regular";
   src: url("../assets/fonts/Poppins/Poppins-Regular");
-  font-weight: 400;
 }
 @font-face {
   font-family: "Poppins Semibold";
   src: url("../assets/fonts/Poppins/Poppins-SemiBold");
-  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
