@@ -1,0 +1,43 @@
+$red: red;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins Extra Light", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+main {
+    max-width: 375px;
+}
+
+h1 {
+    
+}
+
+@font-face {
+    font-family: "Poppins Extra Light";
+    src: url("../assets/fonts/Poppins/Poppins-ExtraLight");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Poppins Regular";
+    src: url("../assets/fonts/Poppins/Poppins-Regular");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins Semibold";
+    src: url("../assets/fonts/Poppins/Poppins-SemiBold");
+    font-weight: 600;
+}
