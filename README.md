@@ -5,4 +5,4 @@
  - https://nishavijai.github.io/four-card-feature-section/
  
  ### Output
-![four-card-feature-section](https://user-images.githubusercontent.com/26595961/232521118-5144c160-4615-467d-b468-7fd5e95e69df.png)
+<img width="1969" height="1710" alt="FourCardFeatureSectionNew" src="https://github.com/user-attachments/assets/994790e8-3f14-42cc-9ff0-d3a63840c1d3" />
