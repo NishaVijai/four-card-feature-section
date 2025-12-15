@@ -6,7 +6,7 @@
 
 body {
   background-color: hsl(0, 0%, 98%);
-  color: hsl(229, 6%, 66%);
+  color: hsl(240, 9%, 51%);
   margin: 0;
   padding: 0;
   font-family: "Poppins Regular", sans-serif;
@@ -35,7 +35,7 @@ main {
   padding: 5rem 2rem;
 }
 main h3 {
-  color: hsl(234, 12%, 34%);
+  color: hsl(240, 9%, 51%);
   font-size: 1.2rem;
 }
 main .supervisor-section {
@@ -60,7 +60,7 @@ main .header-section h1 {
   margin-bottom: 0;
 }
 main .header-section h2 {
-  color: hsl(234, 12%, 34%);
+  color: hsl(240, 9%, 51%);
   font-size: 1.6rem;
   font-weight: 600;
   margin-top: 0;
@@ -75,6 +75,7 @@ main section:not(.header-section) {
   width: 100%;
   padding: 2rem;
   margin: auto;
+  background-color: white;
 }
 main section:not(.header-section) .img-container {
   display: flex;
@@ -103,7 +104,6 @@ footer {
   display: none;
 }
 
-/* media query for desktop */
 @media only screen and (min-device-width: 768px) and (max-device-width: 6024px) {
   main {
     display: grid;
@@ -156,6 +156,38 @@ footer {
   }
   footer a {
     color: hsl(228, 45%, 44%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: hsl(226, 22%, 12%);
+    color: hsl(0, 0%, 95%);
+  }
+  main section:not(.header-section) {
+    background-color: hsl(230, 20%, 20%);
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  main h3,
+  main h2 {
+    color: hsl(0, 0%, 95%);
+  }
+  main .supervisor-section {
+    border-top: 4px solid hsl(180, 62%, 55%);
+  }
+  main .team-builder-section {
+    border-top: 4px solid hsl(0, 78%, 62%);
+  }
+  main .karma-section {
+    border-top: 4px solid hsl(34, 97%, 64%);
+  }
+  main .calculator-section {
+    border-top: 4px solid hsl(212, 86%, 64%);
+  }
+  footer {
+    color: hsl(0, 0%, 95%);
+  }
+  footer a {
+    color: hsl(212, 86%, 64%);
   }
 }
 @font-face {
