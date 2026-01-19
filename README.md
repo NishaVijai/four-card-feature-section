@@ -1,9 +1,3 @@
-Perfect 👍
-Here’s an **updated README with badges + Frontend Mentor attribution**, polished to portfolio / recruiter-ready quality.
-You can paste this directly into your repo.
-
----
-
 # Four Card Feature Section
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5\&logoColor=white)
