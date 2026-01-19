@@ -44,7 +44,7 @@ The project focuses on creating a visually balanced four-card layout that adapts
 
 ## Screenshot
 
-<img width="1440" height="800" alt="Four Card Feature Section" src="https://github.com/user-attachments/assets/your-project-screenshot.png" />
+<img width="1969" height="1710" alt="FourCardFeatureSectionNew" src="https://github.com/user-attachments/assets/994790e8-3f14-42cc-9ff0-d3a63840c1d3" />
 
 ---
 
